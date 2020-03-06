@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simplic.Geography", "Simplic.Geography\Simplic.Geography.csproj", "{6E05F331-3F97-4E9B-BA2C-9D493102FEF5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ENV", "ENV", "{C028B279-B5CD-499C-99F2-2986E27AF333}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitattributes = ..\.gitattributes
+		..\.gitignore = ..\.gitignore
+		..\azure-pipelines.yml = ..\azure-pipelines.yml
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E05F331-3F97-4E9B-BA2C-9D493102FEF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E05F331-3F97-4E9B-BA2C-9D493102FEF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E05F331-3F97-4E9B-BA2C-9D493102FEF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E05F331-3F97-4E9B-BA2C-9D493102FEF5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AE0D8D56-D1E9-4F02-BEBC-80F82D119012}
+	EndGlobalSection
+EndGlobal
