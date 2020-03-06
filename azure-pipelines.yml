@@ -50,6 +50,7 @@ steps:
     publishLocation: 'Container'
 
 - task: NuGetCommand@2
+  condition: eq(variables['Build.SourceBranch'], 'refs/heads/master')
   inputs:
     command: 'push'
     packagesToPush: '$(Build.ArtifactStagingDirectory)/Simplic.Geography.*.nupkg;!**/Simplic.Geography.*.symbols.nupkg'

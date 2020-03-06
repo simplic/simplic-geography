@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Simplic.Geography")]
+[assembly: AssemblyTitle("Simplic.Geography.Data.DB")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Simplic.Geography")]
+[assembly: AssemblyProduct("Simplic.Geography.Data.DB")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("6e05f331-3f97-4e9b-ba2c-9d493102fef5")]
+[assembly: Guid("155422d3-61b0-47a2-a9e4-344ab59e6cb2")]
 
 // Version information for an assembly consists of the following four values:
 //

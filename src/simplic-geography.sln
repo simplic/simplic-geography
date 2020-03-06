@@ -13,6 +13,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ENV", "ENV", "{C028B279-B5C
 		..\README.md = ..\README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simplic.Geography.Service", "Simplic.Geography.Service\Simplic.Geography.Service.csproj", "{FC3D0FE3-14D1-43E8-8E13-30B38A530973}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simplic.Geography.Data.DB", "Simplic.Geography.Data.DB\Simplic.Geography.Data.DB.csproj", "{155422D3-61B0-47A2-A9E4-344AB59E6CB2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +27,14 @@ Global
 		{6E05F331-3F97-4E9B-BA2C-9D493102FEF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E05F331-3F97-4E9B-BA2C-9D493102FEF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E05F331-3F97-4E9B-BA2C-9D493102FEF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC3D0FE3-14D1-43E8-8E13-30B38A530973}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC3D0FE3-14D1-43E8-8E13-30B38A530973}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC3D0FE3-14D1-43E8-8E13-30B38A530973}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC3D0FE3-14D1-43E8-8E13-30B38A530973}.Release|Any CPU.Build.0 = Release|Any CPU
+		{155422D3-61B0-47A2-A9E4-344AB59E6CB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{155422D3-61B0-47A2-A9E4-344AB59E6CB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{155422D3-61B0-47A2-A9E4-344AB59E6CB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{155422D3-61B0-47A2-A9E4-344AB59E6CB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
