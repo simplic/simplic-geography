@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Simplic.Geography.Service
+namespace Simplic.Geography
 {
-    public class Class1
+    public interface ICountryService : ICountryRepository
     {
+        
     }
 }
