@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simplic.Geography.Service",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simplic.Geography.Data.DB", "Simplic.Geography.Data.DB\Simplic.Geography.Data.DB.csproj", "{155422D3-61B0-47A2-A9E4-344AB59E6CB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simplic.Geography.Test", "..\test\Simplic.Geography.Test\Simplic.Geography.Test.csproj", "{63B40CF8-AD28-405F-B800-A62E845BDC15}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{025D00D7-A772-458D-931B-04EEE2F569F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,9 +39,16 @@ Global
 		{155422D3-61B0-47A2-A9E4-344AB59E6CB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{155422D3-61B0-47A2-A9E4-344AB59E6CB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{155422D3-61B0-47A2-A9E4-344AB59E6CB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63B40CF8-AD28-405F-B800-A62E845BDC15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63B40CF8-AD28-405F-B800-A62E845BDC15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63B40CF8-AD28-405F-B800-A62E845BDC15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63B40CF8-AD28-405F-B800-A62E845BDC15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{63B40CF8-AD28-405F-B800-A62E845BDC15} = {025D00D7-A772-458D-931B-04EEE2F569F9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AE0D8D56-D1E9-4F02-BEBC-80F82D119012}

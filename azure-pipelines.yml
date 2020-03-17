@@ -36,10 +36,19 @@ steps:
     solution: '**/*.sln'
     configuration: '$(buildConfiguration)'
 
+
+- task: VSTest@2
+  inputs:
+    testSelector: 'testAssemblies'
+    testAssemblyVer2: |
+      **\Simplic.Geography.Test.dll
+      !**\*TestAdapter.dll
+      !**\obj\**
+
 - task: NuGetCommand@2
   inputs:
     command: 'pack'
-    packagesToPack: 'src/Simplic.Geography**/*.csproj'
+    packagesToPack: 'src/Simplic.Geography**/*.csproj;!test/Simplic.Geography.Test/Simplic.Geography.Test.csproj'
     configuration: '$(buildConfiguration)'
     versioningScheme: 'off'
 
