@@ -1,4 +1,5 @@
-﻿using Simplic.Cache;
+﻿using Dapper;
+using Simplic.Cache;
 using Simplic.Data.Sql;
 using Simplic.Sql;
 using System;
@@ -33,6 +34,16 @@ namespace Simplic.Geography.Data.DB
         /// <param name="obj"></param>
         /// <returns></returns>
         public override Guid GetId(FederalState obj) => obj.Guid;
+
+        public FederalState GetFederalStateByEmploymentId(Guid guid)
+        {
+            return sqlService.OpenConnection((c) =>
+            {
+                return c.QuerySingleOrDefault<FederalState>($"Select * from Federal_State where Guid=(Select c.FederalStateId From IT_Contacts_PhysicalAddress c where c.ContactId =(SELECT LocationId FROM IT_Employment where id = :id))",
+                    new { guid });
+            });
+
+        }
 
 
 

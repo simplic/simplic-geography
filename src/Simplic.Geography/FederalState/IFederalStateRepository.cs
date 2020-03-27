@@ -7,5 +7,6 @@ namespace Simplic.Geography
     public interface IFederalStateRepository : IRepositoryBase<Guid, FederalState>
     {
         IEnumerable<FederalState> GetByCountry(Guid countryId);
+        FederalState GetFederalStateByEmploymentId(Guid guid);
     }
 }

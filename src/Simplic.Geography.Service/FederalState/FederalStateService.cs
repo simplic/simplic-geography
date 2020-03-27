@@ -49,7 +49,17 @@ namespace Simplic.Geography.Service
         {
             return federalStateRepository.GetByCountry(countryId);
         }
-        
+
+        /// <summary>
+        /// Gets a federal state based on employment guid 
+        /// </summary>
+        /// <param name="guid"></param>
+        /// <returns></returns>
+        public FederalState GetFederalStateByEmploymentId(Guid guid)
+        {
+            return federalStateRepository.GetFederalStateByEmploymentId(guid);
+        }
+
 
         /// <summary>
         /// Saves the federal state based on the object/poco
