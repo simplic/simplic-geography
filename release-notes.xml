@@ -1,5 +1,5 @@
 <ReleaseNotes>
-  <ChangeSet>
+  <ChangeSet guid="93b8e7f8-eb22-42a8-9e8c-d73c2a2b925f">
     <Change type="bugfix">Fixes NullReferenceException in '==' operator.</Change>
   </ChangeSet>
 </ReleaseNotes>
