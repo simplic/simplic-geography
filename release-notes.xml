@@ -1,2 +1,5 @@
 <ReleaseNotes>
+  <ChangeSet>
+    <Change type="bugfix">Fixes NullReferenceException in '==' operator.</Change>
+  </ChangeSet>
 </ReleaseNotes>
