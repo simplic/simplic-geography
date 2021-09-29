@@ -8,6 +8,43 @@ namespace Simplic.Geography.Test
     public class FederalState_Equal
     {
         [TestMethod]
+        public void FederalTest_IsNull()
+        {
+            FederalState s1 = null;
+            FederalState s2 = null;
+
+            Assert.AreEqual(s1, s2);
+            Assert.IsTrue(s1 == s2);
+        }
+
+        [TestMethod]
+        public void FederalTest_IsNull2()
+        {
+            var testId = Guid.NewGuid();
+
+            var s1 = new FederalState();
+            s1.Guid = testId;
+            FederalState s2 = null;
+
+            Assert.AreNotEqual(s1, s2);
+            Assert.IsFalse(s1 == s2);
+        }
+
+        [TestMethod]
+        public void FederalTest_IsNull3()
+        {
+            var testId = Guid.NewGuid();
+
+            FederalState s1 = null;
+            var s2 = new FederalState();
+            s2.Guid = testId;
+
+            Assert.AreNotEqual(s1, s2);
+            Assert.IsFalse(s1 == s2);
+        }
+
+
+        [TestMethod]
         public void FederalTest_IsEqual()
         {
             var testId = Guid.NewGuid();
