@@ -7,12 +7,12 @@ namespace Simplic.Geography
     {
         public static bool operator ==(FederalState left, FederalState right)
         {
-            return !(left is null) && left.Equals(right);
+            return (left is null && right is null) || (!(left is null) && left.Equals(right));
         }
 
         public static bool operator !=(FederalState left, FederalState right)
         {
-            return !(left is null) && !left.Equals(right);
+            return (left is null && right is null) ||  (!(left is null) && !left.Equals(right));
         }
 
         public Guid Guid { get; set; } = Guid.NewGuid();
