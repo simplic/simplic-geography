@@ -58,11 +58,15 @@ namespace Simplic.Geography.Test
         {
             var testId = Guid.NewGuid();
 
-            var s1 = new FederalState();
-            s1.Guid = testId;
+            var s1 = new FederalState
+            {
+                Guid = testId
+            };
 
-            var s2 = new FederalState();
-            s2.Guid = testId;
+            var s2 = new FederalState
+            {
+                Guid = testId
+            };
 
             Assert.AreEqual(s1, s2);
             Assert.IsTrue(s1 == s2);
@@ -71,11 +75,15 @@ namespace Simplic.Geography.Test
         [TestMethod]
         public void FederalTest_IsNotEqual()
         {
-            var s1 = new FederalState();
-            s1.Guid = Guid.NewGuid();
+            var s1 = new FederalState
+            {
+                Guid = Guid.NewGuid()
+            };
 
-            var s2 = new FederalState();
-            s2.Guid = Guid.NewGuid();
+            var s2 = new FederalState
+            {
+                Guid = Guid.NewGuid()
+            };
 
             Assert.AreNotEqual(s1, s2);
             Assert.IsFalse(s1 == s2);
@@ -84,8 +92,10 @@ namespace Simplic.Geography.Test
         [TestMethod]
         public void FederalTest_HashEqualIdHash()
         {
-            var s1 = new FederalState();
-            s1.Guid = Guid.NewGuid();
+            var s1 = new FederalState
+            {
+                Guid = Guid.NewGuid()
+            };
 
             Assert.AreEqual(s1.GetHashCode(), s1.Guid.GetHashCode());
         }
@@ -95,11 +105,15 @@ namespace Simplic.Geography.Test
         {
             var testId = Guid.NewGuid();
 
-            var s1 = new FederalState();
-            s1.Guid = testId;
+            var s1 = new FederalState
+            {
+                Guid = testId
+            };
 
-            var s2 = new FederalState();
-            s2.Guid = testId;
+            var s2 = new FederalState
+            {
+                Guid = testId
+            };
 
             var l1 = new[] { s1 };
             var l2 = new[] { s2 };
